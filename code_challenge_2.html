@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>title </title>
+</head>
+<body>
+<h1>heading 1 goes here</h1>
+
+<script type="text/javascript">
+	
+	var markGame1 = 89;
+	var markGame2 = 120;
+	var markGame3 = 183;
+	var jhonGame1 = 196;
+	var jhonGame2 = 94;
+	var jhonGame3 = 123;
+
+	var markAverage = (markGame1 + markGame2 + markGame3)/3;
+	var jhonAverage = (jhonGame1 + jhonGame2 + jhonGame3)/3;
+
+	var won = markAverage > jhonAverage? "Marks" : "Jhon ";
+	var score = (won == "Marks")?markAverage : jhonAverage;
+	console.log("winner of the series is " + won + "having average score of " + score);
+	console.log("winner of the series is: " + won);
+
+</script>
+</body>
+</html>

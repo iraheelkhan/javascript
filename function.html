@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Functions </title>
+</head>
+<body>
+<h1>heading 1 goes here  for function</h1>
+
+<script type="text/javascript">
+	
+	
+	function whatToDo(){
+		console.log('My name is raheel khan');
+
+	}
+
+	//whatToDo();	whatToDo();	whatToDo();	whatToDo();	
+
+	function getInput(x, y, z){
+		var xx = x+y;
+		var zz = xx * z;
+		return zz;
+	}
+
+	var func = function (x, y, z){
+		var xx = x+y;
+		var zz = xx * z;
+		return zz;
+	}
+	console.log(getInput(101,120,150));
+	console.log(func(101,120,150));
+
+	var input = prompt('Enter an input');
+	var testSwitch = function(input){
+		switch(input){
+			case 'teacher':
+			
+			console.log('great! you are teacher');
+			break;
+			case 'student':
+			console.log('wow. you are student');
+			break;
+			default:
+			console.log('enter a valid input');
+		}
+	}
+	
+		testSwitch(input);
+	</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array </title>
+</head>
+<body>
+<h1>heading 1 goes here  for function</h1>
+
+<script type="text/javascript">
+	
+	var name = ['raheel', 'khan', 'is', 'very', 'good'];
+	var names = new Array('raheel', 'khan', 'is', 'very', 'good');
+
+	console.log(names);
+	names.push('pakistani');
+	console.log(names);
+	names.pop('pakistani');
+	console.log(names);
+	names.unshift('ra');
+	console.log(names);
+	console.log(names[0]);
+	console.log(names.indexOf("ra"));
+	console.log(names.indexOf("raheel"));
+
+	var isGood = names.indexOf('raheel') === -1 ? 'i am not good man' : 'GOOD MORNING'
+	console.log(isGood);
+
+	
+</script>
+</body>
+</html>

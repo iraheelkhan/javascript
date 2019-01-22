@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>code challenge 3 </title>
+</head>
+<body>
+<h1>heading 1 goes here  for function</h1>
+
+<script type="text/javascript">
+	
+	function calculate_tip(bill){
+		var tip;
+
+		if(bill<50){
+			tip = 0.2;
+		}
+		else if(bill>50 && bill <200){
+			tip = 0.15;
+		}
+		else if(bill>200){
+			tip = 0.10;
+		}
+		return tip * bill;
+	}
+
+	var bills = new Array(124,48,268);
+	var tips = new Array(
+		calculate_tip(bills[0]),
+		calculate_tip(bills[1]),
+		calculate_tip(bills[2])
+		);
+	var paids = new Array(
+		bills[0] + calculate_tip(bills[0]),
+		bills[1] + calculate_tip(bills[1]), 
+		bills[2] + calculate_tip(bills[2])
+		);
+	
+	console.log('TotalBills: ' + bills);	
+	console.log('TotalTips: ' + 
+					Math.round(tips[0]) + 
+					" " + Math.round(tips[1]) + 
+					" " + Math.round(tips[2])
+					);	
+	
+	console.log('TotalPaids: ' + paids);	
+	
+</script>
+</body>
+</html>
