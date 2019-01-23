@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Object and Properties </title>
+</head>
+<body>
+<h1>heading 1 goes here  for function</h1>
+
+<script type="text/javascript">
+	
+	var raheel = {
+		name: 'raheel',
+		birthYear : 1996,
+		marks : 371,
+		calAge : function(){
+			return this.age = 2018 - this.birthYear;
+		},
+		calPercentage: function(){
+			return this.percentage = (this.marks/400)*100;
+		}
+	}
+
+
+	console.log(raheel.calPercentage());
+	console.log(raheel.calAge());
+</script>
+</body>
+</html>

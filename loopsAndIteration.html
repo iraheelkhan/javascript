@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lopp and Iteration </title>
+</head>
+<body>
+<h1>heading 1 goes here  for function</h1>
+
+<script type="text/javascript">
+	var raheel = [
+		"name", 'raheel',
+		"birthYear", 1996,
+		"marks", 371	
+	];
+	console.log(raheel.length);
+	for(var i = 0; i <= raheel.length; i++){
+		console.log(i);
+	}
+	i = 0;
+	while(i <= raheel.length){
+		if(typeof raheel[i] != 'string'){
+			break;
+		}
+		console.log(raheel[i]);
+		i++
+	}
+</script>
+</body>
+</html>

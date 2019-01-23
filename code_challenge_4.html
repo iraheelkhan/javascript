@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Object and Properties </title>
+</head>
+<body>
+<h1>heading 1 goes here  for function</h1>
+
+<script type="text/javascript">
+	
+	var jhon = {
+		name: 'jhon khan',
+		mass: 112,
+		height: 5.3,
+		calBMI: function(){
+			return this.BMI = (this.mass/ this.height * this.height);
+		}
+	}
+
+	var mark = {
+		name: 'mark khaan',
+		mass: 122,
+		height: 5.7,
+		calBMI: function(){
+			return this.BMI = (this.mass / this.height * this.height);
+		}
+	}
+
+	//var decision = jhon.calBMI > mark.calBMI;
+	console.log(jhon.calBMI());
+	console.log(mark.calBMI());
+	
+	if(jhon.calBMI() > mark.calBMI()){
+		console.log(jhon.name + "has greater BMI of " + jhon.calBMI() );
+	} else if(mark.calBMI() > jhon.calBMI()){
+		console.log(mark.name + "has greater BMI of " + mark.calBMI()  );
+	} else{
+		console.log("they both have the same BMI");
+	}
+
+
+</script>
+</body>
+</html>

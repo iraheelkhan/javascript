@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Object and Properties </title>
+</head>
+<body>
+<h1>heading 1 goes here  for function</h1>
+
+<script type="text/javascript">
+	
+	var jhon  = {
+		fullName: "jhon Khan ",
+		bills: [124, 48, 268, 180, 42],
+		calcTips: function(){
+			this.tips = [];
+			this.total = [];
+
+			for(var i = 0; i<this.bills.length ; i++){
+
+				var percentage;
+				var bill = this.bills[i];
+
+				if(bill < 50){
+					percentage = 0.2;
+				} else if(bill >= 50 && bill <=200){
+					percentage = 0.15;
+				} else if(bill > 200){
+					percentage = 0.1;
+				} else {
+					percentage = 0;
+				}
+
+				this.tips[i] = bill * percentage;
+				this.total[i] = bill + this.tips[i];
+			}
+
+
+		},
+	}
+	jhon.calcTips();
+	console.log(jhon);
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
